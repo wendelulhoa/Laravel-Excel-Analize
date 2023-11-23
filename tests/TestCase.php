@@ -4,7 +4,7 @@ namespace Analize\Excel\Tests;
 
 use Illuminate\Contracts\Queue\Job;
 use Illuminate\Http\Testing\File;
-use Analize\Excel\ExcelServiceProvider;
+use Analize\Excel\ExcelAnalizeServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Analize\PhpSpreadsheet\IOFactory;
 use PHPUnit\Framework\Constraint\StringContains;
@@ -71,7 +71,7 @@ class TestCase extends OrchestraTestCase
     protected function getPackageProviders($app)
     {
         return [
-            ExcelServiceProvider::class,
+            ExcelAnalizeServiceProvider::class,
         ];
     }
 

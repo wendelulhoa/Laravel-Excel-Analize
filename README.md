@@ -14,7 +14,7 @@
 exports and imports.
 </p>
 
-php artisan vendor:publish --provider="Analize\Excel\ExcelServiceProvider" --tag=config
+php artisan vendor:publish --provider="Analize\Excel\ExcelAnalizeServiceProvider" --tag=config
 
 <h4 align="center">
   <a href="https://docs.laravel-excel.com/3.1/exports/">Quickstart</a>

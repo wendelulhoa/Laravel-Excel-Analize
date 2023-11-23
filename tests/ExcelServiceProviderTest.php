@@ -12,7 +12,7 @@ use Analize\Excel\Tests\Data\Stubs\CustomTransactionHandler;
 use Analize\Excel\Transactions\TransactionManager;
 use Analize\PhpSpreadsheet\Settings;
 
-class ExcelServiceProviderTest extends TestCase
+class ExcelAnalizeServiceProviderTest extends TestCase
 {
     /**
      * @test

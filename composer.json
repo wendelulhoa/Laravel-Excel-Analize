@@ -44,7 +44,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Analize\\Excel\\ExcelServiceProvider"
+        "Analize\\Excel\\ExcelAnalizeServiceProvider"
       ],
       "aliases": {
         "Excel": "Analize\\Excel\\Facades\\Excel"

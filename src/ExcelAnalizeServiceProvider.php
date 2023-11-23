@@ -15,7 +15,7 @@ use Analize\Excel\Mixins\StoreCollection;
 use Analize\Excel\Transactions\TransactionHandler;
 use Analize\Excel\Transactions\TransactionManager;
 
-class ExcelServiceProvider extends ServiceProvider
+class ExcelAnalizeServiceProvider extends ServiceProvider
 {
     /**
      * {@inheritdoc}
