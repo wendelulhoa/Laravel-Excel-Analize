@@ -47,7 +47,7 @@
         "Analize\\Excel\\ExcelAnalizeServiceProvider"
       ],
       "aliases": {
-        "Excel": "Analize\\Excel\\Facades\\ExcelAnalize"
+        "ExcelAnalize": "Analize\\Excel\\Facades\\ExcelAnalize"
       }
     }
   },
