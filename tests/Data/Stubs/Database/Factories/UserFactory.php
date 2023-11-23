@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
 
 /*
 |--------------------------------------------------------------------------

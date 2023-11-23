@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Events;
+namespace Analize\Excel\Events;
 
-use Maatwebsite\Excel\Sheet;
+use Analize\Excel\Sheet;
 
 class AfterChunk extends Event
 {

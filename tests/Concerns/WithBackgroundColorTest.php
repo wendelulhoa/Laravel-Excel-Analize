@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithBackgroundColor;
-use Maatwebsite\Excel\Tests\TestCase;
-use PhpOffice\PhpSpreadsheet\Style\Color;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\WithBackgroundColor;
+use Analize\Excel\Tests\TestCase;
+use Analize\PhpSpreadsheet\Style\Color;
+use Analize\PhpSpreadsheet\Style\Fill;
 
 class WithBackgroundColorTest extends TestCase
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Illuminate\Support\Str;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithMappedCells;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithMappedCells;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 class WithMappedCellsTest extends TestCase

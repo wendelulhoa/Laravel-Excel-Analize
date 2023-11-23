@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs\Middleware;
+namespace Analize\Excel\Jobs\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Translation\HasLocalePreference;

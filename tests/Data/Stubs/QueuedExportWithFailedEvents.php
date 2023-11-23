@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
 use Exception;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Events\BeforeExport;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Events\BeforeExport;
 use PHPUnit\Framework\Assert;
 use Throwable;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithProperties;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\WithProperties;
+use Analize\Excel\Tests\TestCase;
 
 class WithPropertiesTest extends TestCase
 {

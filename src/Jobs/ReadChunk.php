@@ -1,25 +1,25 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Analize\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Cache;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\AfterChunk;
-use Maatwebsite\Excel\Events\ImportFailed;
-use Maatwebsite\Excel\Files\RemoteTemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Filters\ChunkReadFilter;
-use Maatwebsite\Excel\HasEventBus;
-use Maatwebsite\Excel\Imports\HeadingRowExtractor;
-use Maatwebsite\Excel\Sheet;
-use Maatwebsite\Excel\Transactions\TransactionHandler;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Reader\IReader;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Concerns\WithCustomValueBinder;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Events\AfterChunk;
+use Analize\Excel\Events\ImportFailed;
+use Analize\Excel\Files\RemoteTemporaryFile;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Filters\ChunkReadFilter;
+use Analize\Excel\HasEventBus;
+use Analize\Excel\Imports\HeadingRowExtractor;
+use Analize\Excel\Sheet;
+use Analize\Excel\Transactions\TransactionHandler;
+use Analize\PhpSpreadsheet\Cell\Cell;
+use Analize\PhpSpreadsheet\Reader\IReader;
 use Throwable;
 
 class ReadChunk implements ShouldQueue
@@ -160,8 +160,8 @@ class ReadChunk implements ShouldQueue
     /**
      * @param  TransactionHandler  $transaction
      *
-     * @throws \Maatwebsite\Excel\Exceptions\SheetNotFoundException
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\Excel\Exceptions\SheetNotFoundException
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function handle(TransactionHandler $transaction)
     {

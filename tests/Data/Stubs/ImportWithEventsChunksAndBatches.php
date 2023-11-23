@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Events\AfterBatch;
-use Maatwebsite\Excel\Events\AfterChunk;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithBatchInserts;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Events\AfterBatch;
+use Analize\Excel\Events\AfterChunk;
 
 class ImportWithEventsChunksAndBatches extends ImportWithEvents implements WithBatchInserts, ToModel, WithChunkReading
 {

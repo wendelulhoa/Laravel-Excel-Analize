@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Analize\Excel\Jobs;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Jobs\Middleware\LocalizeJob;
-use Maatwebsite\Excel\Writer;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Jobs\Middleware\LocalizeJob;
+use Analize\Excel\Writer;
 use Throwable;
 
 class QueueExport implements ShouldQueue
@@ -54,7 +54,7 @@ class QueueExport implements ShouldQueue
     /**
      * @param  Writer  $writer
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function handle(Writer $writer)
     {

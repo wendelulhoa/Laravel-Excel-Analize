@@ -1,62 +1,62 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\FromArray;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\FromGenerator;
-use Maatwebsite\Excel\Concerns\FromIterator;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\OnEachRow;
-use Maatwebsite\Excel\Concerns\ShouldAutoSize;
-use Maatwebsite\Excel\Concerns\SkipsEmptyRows;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToCollection;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
-use Maatwebsite\Excel\Concerns\WithCharts;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithColumnFormatting;
-use Maatwebsite\Excel\Concerns\WithColumnLimit;
-use Maatwebsite\Excel\Concerns\WithColumnWidths;
-use Maatwebsite\Excel\Concerns\WithCustomChunkSize;
-use Maatwebsite\Excel\Concerns\WithCustomStartCell;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
-use Maatwebsite\Excel\Concerns\WithDrawings;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithFormatData;
-use Maatwebsite\Excel\Concerns\WithHeadings;
-use Maatwebsite\Excel\Concerns\WithMappedCells;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\WithProgressBar;
-use Maatwebsite\Excel\Concerns\WithStrictNullComparison;
-use Maatwebsite\Excel\Concerns\WithStyles;
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Exceptions\ConcernConflictException;
-use Maatwebsite\Excel\Exceptions\RowSkippedException;
-use Maatwebsite\Excel\Exceptions\SheetNotFoundException;
-use Maatwebsite\Excel\Files\TemporaryFileFactory;
-use Maatwebsite\Excel\Helpers\ArrayHelper;
-use Maatwebsite\Excel\Helpers\CellHelper;
-use Maatwebsite\Excel\Imports\EndRowFinder;
-use Maatwebsite\Excel\Imports\HeadingRowExtractor;
-use Maatwebsite\Excel\Imports\ModelImporter;
-use Maatwebsite\Excel\Validators\RowValidator;
-use PhpOffice\PhpSpreadsheet\Cell\Cell as SpreadsheetCell;
-use PhpOffice\PhpSpreadsheet\Chart\Chart;
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Reader\Html;
-use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\BaseDrawing;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\Excel\Concerns\FromArray;
+use Analize\Excel\Concerns\FromCollection;
+use Analize\Excel\Concerns\FromGenerator;
+use Analize\Excel\Concerns\FromIterator;
+use Analize\Excel\Concerns\FromQuery;
+use Analize\Excel\Concerns\FromView;
+use Analize\Excel\Concerns\OnEachRow;
+use Analize\Excel\Concerns\ShouldAutoSize;
+use Analize\Excel\Concerns\SkipsEmptyRows;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToCollection;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithCalculatedFormulas;
+use Analize\Excel\Concerns\WithCharts;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Concerns\WithColumnFormatting;
+use Analize\Excel\Concerns\WithColumnLimit;
+use Analize\Excel\Concerns\WithColumnWidths;
+use Analize\Excel\Concerns\WithCustomChunkSize;
+use Analize\Excel\Concerns\WithCustomStartCell;
+use Analize\Excel\Concerns\WithCustomValueBinder;
+use Analize\Excel\Concerns\WithDrawings;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithFormatData;
+use Analize\Excel\Concerns\WithHeadings;
+use Analize\Excel\Concerns\WithMappedCells;
+use Analize\Excel\Concerns\WithMapping;
+use Analize\Excel\Concerns\WithProgressBar;
+use Analize\Excel\Concerns\WithStrictNullComparison;
+use Analize\Excel\Concerns\WithStyles;
+use Analize\Excel\Concerns\WithTitle;
+use Analize\Excel\Concerns\WithValidation;
+use Analize\Excel\Events\AfterSheet;
+use Analize\Excel\Events\BeforeSheet;
+use Analize\Excel\Exceptions\ConcernConflictException;
+use Analize\Excel\Exceptions\RowSkippedException;
+use Analize\Excel\Exceptions\SheetNotFoundException;
+use Analize\Excel\Files\TemporaryFileFactory;
+use Analize\Excel\Helpers\ArrayHelper;
+use Analize\Excel\Helpers\CellHelper;
+use Analize\Excel\Imports\EndRowFinder;
+use Analize\Excel\Imports\HeadingRowExtractor;
+use Analize\Excel\Imports\ModelImporter;
+use Analize\Excel\Validators\RowValidator;
+use Analize\PhpSpreadsheet\Cell\Cell as SpreadsheetCell;
+use Analize\PhpSpreadsheet\Chart\Chart;
+use Analize\PhpSpreadsheet\IOFactory;
+use Analize\PhpSpreadsheet\Reader\Html;
+use Analize\PhpSpreadsheet\Shared\StringHelper;
+use Analize\PhpSpreadsheet\Spreadsheet;
+use Analize\PhpSpreadsheet\Worksheet\BaseDrawing;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 /** @mixin Worksheet */
 class Sheet
@@ -98,7 +98,7 @@ class Sheet
      * @param  string|int  $index
      * @return Sheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      * @throws SheetNotFoundException
      */
     public static function make(Spreadsheet $spreadsheet, $index)
@@ -115,7 +115,7 @@ class Sheet
      * @param  int  $index
      * @return Sheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      * @throws SheetNotFoundException
      */
     public static function byIndex(Spreadsheet $spreadsheet, int $index): Sheet
@@ -146,7 +146,7 @@ class Sheet
     /**
      * @param  object  $sheetExport
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function open($sheetExport)
     {
@@ -197,8 +197,8 @@ class Sheet
     /**
      * @param  object  $sheetExport
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function export($sheetExport)
     {
@@ -391,7 +391,7 @@ class Sheet
     /**
      * @param  object  $sheetExport
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function close($sheetExport)
     {
@@ -439,7 +439,7 @@ class Sheet
      * @param  FromView  $sheetExport
      * @param  int|null  $sheetIndex
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function fromView(FromView $sheetExport, $sheetIndex = null)
     {
@@ -535,7 +535,7 @@ class Sheet
      * @param  string  $column
      * @param  string  $format
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function formatColumn(string $column, string $format)
     {

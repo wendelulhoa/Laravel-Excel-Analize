@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\Exportable;
 
 class EmptyExport
 {

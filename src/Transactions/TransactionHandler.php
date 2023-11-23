@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Transactions;
+namespace Analize\Excel\Transactions;
 
 interface TransactionHandler
 {

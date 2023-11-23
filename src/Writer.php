@@ -1,25 +1,25 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
-use Maatwebsite\Excel\Concerns\WithBackgroundColor;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
-use Maatwebsite\Excel\Concerns\WithDefaultStyles;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithProperties;
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Factories\WriterFactory;
-use Maatwebsite\Excel\Files\RemoteTemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFileFactory;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Color;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
+use Analize\Excel\Concerns\WithBackgroundColor;
+use Analize\Excel\Concerns\WithCustomValueBinder;
+use Analize\Excel\Concerns\WithDefaultStyles;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Concerns\WithProperties;
+use Analize\Excel\Concerns\WithTitle;
+use Analize\Excel\Events\BeforeExport;
+use Analize\Excel\Events\BeforeWriting;
+use Analize\Excel\Factories\WriterFactory;
+use Analize\Excel\Files\RemoteTemporaryFile;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Files\TemporaryFileFactory;
+use Analize\PhpSpreadsheet\Cell\Cell;
+use Analize\PhpSpreadsheet\IOFactory;
+use Analize\PhpSpreadsheet\Spreadsheet;
+use Analize\PhpSpreadsheet\Style\Color;
+use Analize\PhpSpreadsheet\Style\Fill;
 
 /** @mixin Spreadsheet */
 class Writer
@@ -56,7 +56,7 @@ class Writer
      * @param  string  $writerType
      * @return TemporaryFile
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function export($export, string $writerType): TemporaryFile
     {
@@ -132,7 +132,7 @@ class Writer
      * @param  string  $writerType
      * @return Writer
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function reopen(TemporaryFile $tempFile, string $writerType)
     {
@@ -148,8 +148,8 @@ class Writer
      * @param  string  $writerType
      * @return TemporaryFile
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Writer\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function write($export, TemporaryFile $temporaryFile, string $writerType): TemporaryFile
     {
@@ -185,7 +185,7 @@ class Writer
      * @param  int|null  $sheetIndex
      * @return Sheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function addNewSheet(int $sheetIndex = null)
     {
@@ -216,7 +216,7 @@ class Writer
      * @param  int  $sheetIndex
      * @return Sheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function getSheetByIndex(int $sheetIndex)
     {

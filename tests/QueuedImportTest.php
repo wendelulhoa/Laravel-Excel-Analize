@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Queue\Events\JobExceptionOccurred;
@@ -8,17 +8,17 @@ use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\Events\JobProcessing;
 use Illuminate\Support\Facades\Bus;
 use Illuminate\Support\Facades\Queue;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Files\RemoteTemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Jobs\AfterImportJob;
-use Maatwebsite\Excel\Jobs\ReadChunk;
-use Maatwebsite\Excel\SettingsProvider;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueImportJob;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedImport;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedImportWithFailure;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedImportWithMiddleware;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedImportWithRetryUntil;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Files\RemoteTemporaryFile;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Jobs\AfterImportJob;
+use Analize\Excel\Jobs\ReadChunk;
+use Analize\Excel\SettingsProvider;
+use Analize\Excel\Tests\Data\Stubs\AfterQueueImportJob;
+use Analize\Excel\Tests\Data\Stubs\QueuedImport;
+use Analize\Excel\Tests\Data\Stubs\QueuedImportWithFailure;
+use Analize\Excel\Tests\Data\Stubs\QueuedImportWithMiddleware;
+use Analize\Excel\Tests\Data\Stubs\QueuedImportWithRetryUntil;
 use Throwable;
 
 class QueuedImportTest extends TestCase

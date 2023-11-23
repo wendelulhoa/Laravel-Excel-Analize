@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Analize\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\ImportFailed;
-use Maatwebsite\Excel\HasEventBus;
-use Maatwebsite\Excel\Reader;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Events\ImportFailed;
+use Analize\Excel\HasEventBus;
+use Analize\Excel\Reader;
 use Throwable;
 
 class AfterImportJob implements ShouldQueue

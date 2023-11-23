@@ -1,21 +1,21 @@
 <?php
 
-namespace Maatwebsite\Excel\Imports;
+namespace Analize\Excel\Imports;
 
-use Maatwebsite\Excel\Concerns\SkipsEmptyRows;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
-use Maatwebsite\Excel\Concerns\WithColumnLimit;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithFormatData;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\WithProgressBar;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Events\AfterBatch;
-use Maatwebsite\Excel\HasEventBus;
-use Maatwebsite\Excel\Row;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\Excel\Concerns\SkipsEmptyRows;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithBatchInserts;
+use Analize\Excel\Concerns\WithCalculatedFormulas;
+use Analize\Excel\Concerns\WithColumnLimit;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithFormatData;
+use Analize\Excel\Concerns\WithMapping;
+use Analize\Excel\Concerns\WithProgressBar;
+use Analize\Excel\Concerns\WithValidation;
+use Analize\Excel\Events\AfterBatch;
+use Analize\Excel\HasEventBus;
+use Analize\Excel\Row;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 class ModelImporter
 {
@@ -40,7 +40,7 @@ class ModelImporter
      * @param  int|null  $startRow
      * @param  string|null  $endColumn
      *
-     * @throws \Maatwebsite\Excel\Validators\ValidationException
+     * @throws \Analize\Excel\Validators\ValidationException
      */
     public function import(Worksheet $worksheet, ToModel $import, int $startRow = 1)
     {

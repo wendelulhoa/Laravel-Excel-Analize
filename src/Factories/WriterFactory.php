@@ -1,18 +1,18 @@
 <?php
 
-namespace Maatwebsite\Excel\Factories;
+namespace Analize\Excel\Factories;
 
-use Maatwebsite\Excel\Cache\CacheManager;
-use Maatwebsite\Excel\Concerns\MapsCsvSettings;
-use Maatwebsite\Excel\Concerns\WithCharts;
-use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithPreCalculateFormulas;
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Csv;
-use PhpOffice\PhpSpreadsheet\Writer\Html;
-use PhpOffice\PhpSpreadsheet\Writer\IWriter;
+use Analize\Excel\Cache\CacheManager;
+use Analize\Excel\Concerns\MapsCsvSettings;
+use Analize\Excel\Concerns\WithCharts;
+use Analize\Excel\Concerns\WithCustomCsvSettings;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Concerns\WithPreCalculateFormulas;
+use Analize\PhpSpreadsheet\IOFactory;
+use Analize\PhpSpreadsheet\Spreadsheet;
+use Analize\PhpSpreadsheet\Writer\Csv;
+use Analize\PhpSpreadsheet\Writer\Html;
+use Analize\PhpSpreadsheet\Writer\IWriter;
 
 class WriterFactory
 {
@@ -24,7 +24,7 @@ class WriterFactory
      * @param  object  $export
      * @return IWriter
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
+     * @throws \Analize\PhpSpreadsheet\Writer\Exception
      */
     public static function make(string $writerType, Spreadsheet $spreadsheet, $export): IWriter
     {

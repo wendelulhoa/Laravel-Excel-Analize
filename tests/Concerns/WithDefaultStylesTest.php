@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\FromArray;
-use Maatwebsite\Excel\Concerns\WithDefaultStyles;
-use Maatwebsite\Excel\Tests\TestCase;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
-use PhpOffice\PhpSpreadsheet\Style\Style;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\FromArray;
+use Analize\Excel\Concerns\WithDefaultStyles;
+use Analize\Excel\Tests\TestCase;
+use Analize\PhpSpreadsheet\Style\Fill;
+use Analize\PhpSpreadsheet\Style\Style;
 
 class WithDefaultStylesTest extends TestCase
 {

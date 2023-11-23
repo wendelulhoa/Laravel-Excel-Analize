@@ -1,6 +1,6 @@
 <?php
 
-use Maatwebsite\Excel\Excel;
+use Analize\Excel\Excel;
 
 return [
     'exports' => [
@@ -202,13 +202,13 @@ return [
     |
     | Possible value binders:
     |
-    | [x] Maatwebsite\Excel\DefaultValueBinder::class
-    | [x] PhpOffice\PhpSpreadsheet\Cell\StringValueBinder::class
-    | [x] PhpOffice\PhpSpreadsheet\Cell\AdvancedValueBinder::class
+    | [x] Analize\Excel\DefaultValueBinder::class
+    | [x] Analize\PhpSpreadsheet\Cell\StringValueBinder::class
+    | [x] Analize\PhpSpreadsheet\Cell\AdvancedValueBinder::class
     |
     */
     'value_binder' => [
-        'default' => Maatwebsite\Excel\DefaultValueBinder::class,
+        'default' => Analize\Excel\DefaultValueBinder::class,
     ],
 
     'cache' => [

@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Files\Filesystem;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Helpers\FileTypeDetector;
+use Analize\Excel\Files\Filesystem;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Helpers\FileTypeDetector;
 
 class Excel implements Exporter, Importer
 {
@@ -186,7 +186,7 @@ class Excel implements Exporter, Importer
      * @param  string  $writerType
      * @return TemporaryFile
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     protected function export($export, string $fileName, string $writerType = null): TemporaryFile
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
 use Illuminate\Contracts\Translation\HasLocalePreference;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\FromCollection;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
 use PHPUnit\Framework\Assert;
 
 class QueuedExportWithLocalePreferences implements FromCollection, HasLocalePreference

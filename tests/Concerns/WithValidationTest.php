@@ -1,24 +1,24 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\Rule;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\OnEachRow;
-use Maatwebsite\Excel\Concerns\SkipsEmptyRows;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToCollection;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithGroupedHeadingRow;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Row;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Validators\ValidationException;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\OnEachRow;
+use Analize\Excel\Concerns\SkipsEmptyRows;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToCollection;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithBatchInserts;
+use Analize\Excel\Concerns\WithGroupedHeadingRow;
+use Analize\Excel\Concerns\WithHeadingRow;
+use Analize\Excel\Concerns\WithValidation;
+use Analize\Excel\Row;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Tests\TestCase;
+use Analize\Excel\Validators\ValidationException;
 use PHPUnit\Framework\Assert;
 
 class WithValidationTest extends TestCase
@@ -961,7 +961,7 @@ class WithValidationTest extends TestCase
             }
 
             /**
-             * @param  \Maatwebsite\Excel\Row  $row
+             * @param  \Analize\Excel\Row  $row
              * @return void
              */
             public function onRow(Row $row)
@@ -1026,7 +1026,7 @@ class WithValidationTest extends TestCase
             }
 
             /**
-             * @param  \Maatwebsite\Excel\Row  $row
+             * @param  \Analize\Excel\Row  $row
              * @return void
              */
             public function onRow(Row $row)

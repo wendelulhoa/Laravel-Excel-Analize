@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithTitle;
-use Maatwebsite\Excel\Tests\Data\Stubs\WithTitleExport;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Concerns\WithTitle;
+use Analize\Excel\Tests\Data\Stubs\WithTitleExport;
+use Analize\Excel\Tests\TestCase;
 
 class WithTitleTest extends TestCase
 {

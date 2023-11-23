@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
 use Composer\InstalledVersions;
 use Composer\Semver\VersionParser;
 use Illuminate\Contracts\Console\Kernel;
-use Maatwebsite\Excel\Cache\MemoryCache;
-use Maatwebsite\Excel\Cache\MemoryCacheDeprecated;
-use Maatwebsite\Excel\Excel;
-use Maatwebsite\Excel\Tests\Data\Stubs\CustomTransactionHandler;
-use Maatwebsite\Excel\Transactions\TransactionManager;
-use PhpOffice\PhpSpreadsheet\Settings;
+use Analize\Excel\Cache\MemoryCache;
+use Analize\Excel\Cache\MemoryCacheDeprecated;
+use Analize\Excel\Excel;
+use Analize\Excel\Tests\Data\Stubs\CustomTransactionHandler;
+use Analize\Excel\Transactions\TransactionManager;
+use Analize\PhpSpreadsheet\Settings;
 
 class ExcelServiceProviderTest extends TestCase
 {

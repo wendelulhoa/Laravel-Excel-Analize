@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Analize\Excel\Concerns;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 interface WithStyles
 {

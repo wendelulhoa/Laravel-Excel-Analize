@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Imports;
+namespace Analize\Excel\Imports;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

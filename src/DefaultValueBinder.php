@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder as PhpSpreadsheetDefaultValueBinder;
+use Analize\PhpSpreadsheet\Cell\Cell;
+use Analize\PhpSpreadsheet\Cell\DefaultValueBinder as PhpSpreadsheetDefaultValueBinder;
 
 class DefaultValueBinder extends PhpSpreadsheetDefaultValueBinder
 {

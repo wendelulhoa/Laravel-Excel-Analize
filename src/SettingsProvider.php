@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
-use Maatwebsite\Excel\Cache\CacheManager;
-use PhpOffice\PhpSpreadsheet\Settings;
+use Analize\Excel\Cache\CacheManager;
+use Analize\PhpSpreadsheet\Settings;
 
 class SettingsProvider
 {

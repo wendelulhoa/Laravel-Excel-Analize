@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Analize\Excel\Concerns;
 
-use PhpOffice\PhpSpreadsheet\Chart\Chart;
+use Analize\PhpSpreadsheet\Chart\Chart;
 
 interface WithCharts
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 interface Exporter
 {
@@ -11,8 +11,8 @@ interface Exporter
      * @param  array  $headers
      * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Writer\Exception
      */
     public function download($export, string $fileName, string $writerType = null, array $headers = []);
 
@@ -24,8 +24,8 @@ interface Exporter
      * @param  mixed  $diskOptions
      * @return bool
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Writer\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Writer\Exception
      */
     public function store($export, string $filePath, string $disk = null, string $writerType = null, $diskOptions = []);
 

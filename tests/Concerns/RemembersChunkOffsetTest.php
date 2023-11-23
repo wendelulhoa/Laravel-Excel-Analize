@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\RemembersChunkOffset;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\RemembersChunkOffset;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Tests\TestCase;
 
 class RemembersChunkOffsetTest extends TestCase
 {

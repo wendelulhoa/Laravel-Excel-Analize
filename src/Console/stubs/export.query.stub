@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Maatwebsite\Excel\Concerns\FromQuery;
+use Analize\Excel\Concerns\FromQuery;
 
 class DummyClass implements FromQuery
 {

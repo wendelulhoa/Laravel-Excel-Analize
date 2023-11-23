@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\ShouldQueueWithoutChain;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\AfterImport;
-use Maatwebsite\Excel\Events\BeforeImport;
-use Maatwebsite\Excel\Reader;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\ShouldQueueWithoutChain;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Events\AfterImport;
+use Analize\Excel\Events\BeforeImport;
+use Analize\Excel\Reader;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
 use PHPUnit\Framework\Assert;
 
 class QueueImportWithoutJobChaining implements ToModel, WithChunkReading, WithEvents, ShouldQueueWithoutChain

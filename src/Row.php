@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use ArrayAccess;
 use Closure;
 use Illuminate\Support\Collection;
-use PhpOffice\PhpSpreadsheet\Worksheet\Row as SpreadsheetRow;
+use Analize\PhpSpreadsheet\Worksheet\Row as SpreadsheetRow;
 
 /** @mixin SpreadsheetRow */
 class Row implements ArrayAccess

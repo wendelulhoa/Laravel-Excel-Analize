@@ -1,18 +1,18 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Carbon\Carbon;
 use Composer\InstalledVersions;
 use Composer\Semver\VersionParser;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\WithColumnFormatting;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Tests\TestCase;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\FromCollection;
+use Analize\Excel\Concerns\WithColumnFormatting;
+use Analize\Excel\Concerns\WithMapping;
+use Analize\Excel\Tests\TestCase;
+use Analize\PhpSpreadsheet\Shared\Date;
+use Analize\PhpSpreadsheet\Style\NumberFormat;
 
 class WithColumnFormattingTest extends TestCase
 {

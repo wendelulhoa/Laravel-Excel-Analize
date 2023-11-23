@@ -1,31 +1,31 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-use Maatwebsite\Excel\Concerns\HasReferencesToOtherSheets;
-use Maatwebsite\Excel\Concerns\SkipsUnknownSheets;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithFormatData;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Events\AfterImport;
-use Maatwebsite\Excel\Events\BeforeImport;
-use Maatwebsite\Excel\Events\ImportFailed;
-use Maatwebsite\Excel\Exceptions\NoTypeDetectedException;
-use Maatwebsite\Excel\Exceptions\SheetNotFoundException;
-use Maatwebsite\Excel\Factories\ReaderFactory;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFileFactory;
-use Maatwebsite\Excel\Transactions\TransactionHandler;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Reader\Exception;
-use PhpOffice\PhpSpreadsheet\Reader\IReader;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use Analize\Excel\Concerns\HasReferencesToOtherSheets;
+use Analize\Excel\Concerns\SkipsUnknownSheets;
+use Analize\Excel\Concerns\WithCalculatedFormulas;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Concerns\WithCustomValueBinder;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithFormatData;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Events\AfterImport;
+use Analize\Excel\Events\BeforeImport;
+use Analize\Excel\Events\ImportFailed;
+use Analize\Excel\Exceptions\NoTypeDetectedException;
+use Analize\Excel\Exceptions\SheetNotFoundException;
+use Analize\Excel\Factories\ReaderFactory;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Files\TemporaryFileFactory;
+use Analize\Excel\Transactions\TransactionHandler;
+use Analize\PhpSpreadsheet\Cell\Cell;
+use Analize\PhpSpreadsheet\Reader\Exception;
+use Analize\PhpSpreadsheet\Reader\IReader;
+use Analize\PhpSpreadsheet\Spreadsheet;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Throwable;
 
@@ -147,7 +147,7 @@ class Reader
      * @return array
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      * @throws NoTypeDetectedException
      * @throws Exceptions\SheetNotFoundException
      */
@@ -191,7 +191,7 @@ class Reader
      * @return Collection
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      * @throws NoTypeDetectedException
      * @throws Exceptions\SheetNotFoundException
      */
@@ -360,7 +360,7 @@ class Reader
      * @param  $index
      * @return Sheet|null
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      * @throws SheetNotFoundException
      */
     protected function getSheet($import, $sheetImport, $index)
@@ -416,7 +416,7 @@ class Reader
      *
      * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      * @throws NoTypeDetectedException
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      * @throws InvalidArgumentException
      */
     private function getReader($import, $filePath, string $readerType = null, string $disk = null): IReader

@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Imports;
+namespace Analize\Excel\Imports;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\SkipsOnError;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithUpsertColumns;
-use Maatwebsite\Excel\Concerns\WithUpserts;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Exceptions\RowSkippedException;
-use Maatwebsite\Excel\Validators\RowValidator;
-use Maatwebsite\Excel\Validators\ValidationException;
+use Analize\Excel\Concerns\SkipsOnError;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithUpsertColumns;
+use Analize\Excel\Concerns\WithUpserts;
+use Analize\Excel\Concerns\WithValidation;
+use Analize\Excel\Exceptions\RowSkippedException;
+use Analize\Excel\Validators\RowValidator;
+use Analize\Excel\Validators\ValidationException;
 use Throwable;
 
 class ModelManager

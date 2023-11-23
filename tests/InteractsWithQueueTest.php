@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
 use Illuminate\Queue\InteractsWithQueue;
-use Maatwebsite\Excel\Jobs\AppendDataToSheet;
-use Maatwebsite\Excel\Jobs\AppendQueryToSheet;
-use Maatwebsite\Excel\Jobs\AppendViewToSheet;
-use Maatwebsite\Excel\Jobs\ReadChunk;
+use Analize\Excel\Jobs\AppendDataToSheet;
+use Analize\Excel\Jobs\AppendQueryToSheet;
+use Analize\Excel\Jobs\AppendViewToSheet;
+use Analize\Excel\Jobs\ReadChunk;
 
 class InteractsWithQueueTest extends TestCase
 {

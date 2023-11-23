@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Cache;
+namespace Analize\Excel\Tests\Cache;
 
 use Composer\InstalledVersions;
 use Composer\Semver\VersionParser;
@@ -9,11 +9,11 @@ use Illuminate\Cache\ArrayStore;
 use Illuminate\Cache\Events\KeyWritten;
 use Illuminate\Cache\Repository;
 use Illuminate\Support\Facades\Event;
-use Maatwebsite\Excel\Cache\BatchCache;
-use Maatwebsite\Excel\Cache\BatchCacheDeprecated;
-use Maatwebsite\Excel\Cache\CacheManager;
-use Maatwebsite\Excel\Cache\MemoryCache;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Cache\BatchCache;
+use Analize\Excel\Cache\BatchCacheDeprecated;
+use Analize\Excel\Cache\CacheManager;
+use Analize\Excel\Cache\MemoryCache;
+use Analize\Excel\Tests\TestCase;
 use Psr\SimpleCache\CacheInterface;
 
 class BatchCacheTest extends TestCase

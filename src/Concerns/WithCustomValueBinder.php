@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace Analize\Excel\Concerns;
 
-use PhpOffice\PhpSpreadsheet\Cell\IValueBinder;
+use Analize\PhpSpreadsheet\Cell\IValueBinder;
 
 interface WithCustomValueBinder extends IValueBinder
 {

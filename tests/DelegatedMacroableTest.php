@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Sheet;
-use Maatwebsite\Excel\Writer;
-use PhpOffice\PhpSpreadsheet\Document\Properties;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\RegistersEventListeners;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Events\BeforeExport;
+use Analize\Excel\Events\BeforeSheet;
+use Analize\Excel\Sheet;
+use Analize\Excel\Writer;
+use Analize\PhpSpreadsheet\Document\Properties;
 
 class DelegatedMacroableTest extends TestCase
 {

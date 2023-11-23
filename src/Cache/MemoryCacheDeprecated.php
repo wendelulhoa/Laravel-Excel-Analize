@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Cache;
+namespace Analize\Excel\Cache;
 
 use Psr\SimpleCache\CacheInterface;
 

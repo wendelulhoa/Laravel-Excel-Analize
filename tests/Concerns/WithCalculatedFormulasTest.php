@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\HasReferencesToOtherSheets;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\SkipsEmptyRows;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithStartRow;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\HasReferencesToOtherSheets;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\SkipsEmptyRows;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithCalculatedFormulas;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Concerns\WithStartRow;
+use Analize\Excel\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 class WithCalculatedFormulasTest extends TestCase

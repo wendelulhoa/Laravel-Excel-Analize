@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\RemembersRowNumber;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\RemembersRowNumber;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithBatchInserts;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Tests\TestCase;
 
 class RemembersRowNumberTest extends TestCase
 {

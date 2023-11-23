@@ -1,19 +1,19 @@
 <?php
 
-namespace Maatwebsite\Excel\Factories;
+namespace Analize\Excel\Factories;
 
-use Maatwebsite\Excel\Concerns\MapsCsvSettings;
-use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
-use Maatwebsite\Excel\Concerns\WithLimit;
-use Maatwebsite\Excel\Concerns\WithReadFilter;
-use Maatwebsite\Excel\Concerns\WithStartRow;
-use Maatwebsite\Excel\Exceptions\NoTypeDetectedException;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Filters\LimitFilter;
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Reader\Csv;
-use PhpOffice\PhpSpreadsheet\Reader\Exception;
-use PhpOffice\PhpSpreadsheet\Reader\IReader;
+use Analize\Excel\Concerns\MapsCsvSettings;
+use Analize\Excel\Concerns\WithCustomCsvSettings;
+use Analize\Excel\Concerns\WithLimit;
+use Analize\Excel\Concerns\WithReadFilter;
+use Analize\Excel\Concerns\WithStartRow;
+use Analize\Excel\Exceptions\NoTypeDetectedException;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Filters\LimitFilter;
+use Analize\PhpSpreadsheet\IOFactory;
+use Analize\PhpSpreadsheet\Reader\Csv;
+use Analize\PhpSpreadsheet\Reader\Exception;
+use Analize\PhpSpreadsheet\Reader\IReader;
 
 class ReaderFactory
 {

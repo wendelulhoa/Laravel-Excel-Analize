@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Analize\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Writer;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Writer;
 
 class CloseSheet implements ShouldQueue
 {
@@ -49,8 +49,8 @@ class CloseSheet implements ShouldQueue
     /**
      * @param  Writer  $writer
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function handle(Writer $writer)
     {

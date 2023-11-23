@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 trait HasEventBus
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\OnEachRow;
-use Maatwebsite\Excel\Concerns\SkipsEmptyRows;
-use Maatwebsite\Excel\Concerns\ToCollection;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Row;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\OnEachRow;
+use Analize\Excel\Concerns\SkipsEmptyRows;
+use Analize\Excel\Concerns\ToCollection;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Row;
+use Analize\Excel\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 class SkipsEmptyRowsTest extends TestCase

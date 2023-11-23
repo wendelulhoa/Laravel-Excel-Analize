@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace Analize\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Jobs\Middleware\LocalizeJob;
-use Maatwebsite\Excel\Writer;
+use Analize\Excel\Concerns\FromView;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Jobs\Middleware\LocalizeJob;
+use Analize\Excel\Writer;
 
 class AppendViewToSheet implements ShouldQueue
 {
@@ -63,8 +63,8 @@ class AppendViewToSheet implements ShouldQueue
     /**
      * @param  Writer  $writer
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function handle(Writer $writer)
     {

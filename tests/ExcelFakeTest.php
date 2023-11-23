@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Facades\Excel as ExcelFacade;
-use Maatwebsite\Excel\Fakes\ExcelFake;
-use Maatwebsite\Excel\Tests\Data\Stubs\ChainedJobStub;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Concerns\FromCollection;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Facades\Excel as ExcelFacade;
+use Analize\Excel\Fakes\ExcelFake;
+use Analize\Excel\Tests\Data\Stubs\ChainedJobStub;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class ExcelFakeTest extends TestCase
@@ -168,7 +168,7 @@ class ExcelFakeTest extends TestCase
     {
         ExcelFacade::fake();
 
-        $response = ExcelFacade::raw($this->givenExport(), \Maatwebsite\Excel\Excel::XLSX);
+        $response = ExcelFacade::raw($this->givenExport(), \Analize\Excel\Excel::XLSX);
 
         $this->assertIsString($response);
 

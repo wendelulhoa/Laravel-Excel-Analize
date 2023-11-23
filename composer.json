@@ -33,21 +33,21 @@
   },
   "autoload": {
     "psr-4": {
-      "Maatwebsite\\Excel\\": "src/"
+      "Analize\\Excel\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Maatwebsite\\Excel\\Tests\\": "tests/"
+      "Analize\\Excel\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Maatwebsite\\Excel\\ExcelServiceProvider"
+        "Analize\\Excel\\ExcelServiceProvider"
       ],
       "aliases": {
-        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+        "Excel": "Analize\\Excel\\Facades\\Excel"
       }
     }
   },

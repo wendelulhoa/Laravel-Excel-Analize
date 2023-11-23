@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
-use Maatwebsite\Excel\HeadingRowImport;
-use Maatwebsite\Excel\Imports\HeadingRowFormatter;
+use Analize\Excel\HeadingRowImport;
+use Analize\Excel\Imports\HeadingRowFormatter;
 
 class HeadingRowImportTest extends TestCase
 {

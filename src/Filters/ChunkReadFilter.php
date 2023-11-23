@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Filters;
+namespace Analize\Excel\Filters;
 
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use Analize\PhpSpreadsheet\Reader\IReadFilter;
 
 class ChunkReadFilter implements IReadFilter
 {

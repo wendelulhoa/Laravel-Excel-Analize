@@ -1,20 +1,20 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeImport;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Reader;
-use Maatwebsite\Excel\Sheet;
-use Maatwebsite\Excel\Tests\Data\Stubs\BeforeExportListener;
-use Maatwebsite\Excel\Tests\Data\Stubs\ExportWithEvents;
-use Maatwebsite\Excel\Tests\Data\Stubs\ExportWithRegistersEventListeners;
-use Maatwebsite\Excel\Tests\Data\Stubs\ImportWithRegistersEventListeners;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Writer;
+use Analize\Excel\Events\AfterSheet;
+use Analize\Excel\Events\BeforeExport;
+use Analize\Excel\Events\BeforeImport;
+use Analize\Excel\Events\BeforeSheet;
+use Analize\Excel\Events\BeforeWriting;
+use Analize\Excel\Reader;
+use Analize\Excel\Sheet;
+use Analize\Excel\Tests\Data\Stubs\BeforeExportListener;
+use Analize\Excel\Tests\Data\Stubs\ExportWithEvents;
+use Analize\Excel\Tests\Data\Stubs\ExportWithRegistersEventListeners;
+use Analize\Excel\Tests\Data\Stubs\ImportWithRegistersEventListeners;
+use Analize\Excel\Tests\TestCase;
+use Analize\Excel\Writer;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class RegistersEventListenersTest extends TestCase

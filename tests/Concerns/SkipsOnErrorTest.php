@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\QueryException;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\SkipsErrors;
-use Maatwebsite\Excel\Concerns\SkipsOnError;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\SkipsErrors;
+use Analize\Excel\Concerns\SkipsOnError;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Throwable;
 

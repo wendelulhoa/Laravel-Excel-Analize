@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Transactions;
+namespace Analize\Excel\Transactions;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Manager;

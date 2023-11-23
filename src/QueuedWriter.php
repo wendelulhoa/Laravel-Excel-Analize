@@ -1,23 +1,23 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\WithCustomChunkSize;
-use Maatwebsite\Excel\Concerns\WithCustomQuerySize;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Files\TemporaryFile;
-use Maatwebsite\Excel\Files\TemporaryFileFactory;
-use Maatwebsite\Excel\Jobs\AppendDataToSheet;
-use Maatwebsite\Excel\Jobs\AppendQueryToSheet;
-use Maatwebsite\Excel\Jobs\AppendViewToSheet;
-use Maatwebsite\Excel\Jobs\CloseSheet;
-use Maatwebsite\Excel\Jobs\QueueExport;
-use Maatwebsite\Excel\Jobs\StoreQueuedExport;
+use Analize\Excel\Concerns\FromCollection;
+use Analize\Excel\Concerns\FromQuery;
+use Analize\Excel\Concerns\FromView;
+use Analize\Excel\Concerns\WithCustomChunkSize;
+use Analize\Excel\Concerns\WithCustomQuerySize;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Files\TemporaryFile;
+use Analize\Excel\Files\TemporaryFileFactory;
+use Analize\Excel\Jobs\AppendDataToSheet;
+use Analize\Excel\Jobs\AppendQueryToSheet;
+use Analize\Excel\Jobs\AppendViewToSheet;
+use Analize\Excel\Jobs\CloseSheet;
+use Analize\Excel\Jobs\QueueExport;
+use Analize\Excel\Jobs\StoreQueuedExport;
 use Traversable;
 
 class QueuedWriter

@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Events;
+namespace Analize\Excel\Events;
 
-use Maatwebsite\Excel\Imports\ModelManager;
+use Analize\Excel\Imports\ModelManager;
 
 class AfterBatch extends Event
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Exception;
-use PhpOffice\PhpSpreadsheet\Cell\Cell as SpreadsheetCell;
-use PhpOffice\PhpSpreadsheet\RichText\RichText;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\PhpSpreadsheet\Calculation\Exception;
+use Analize\PhpSpreadsheet\Cell\Cell as SpreadsheetCell;
+use Analize\PhpSpreadsheet\RichText\RichText;
+use Analize\PhpSpreadsheet\Style\NumberFormat;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 /** @mixin SpreadsheetCell */
 class Cell
@@ -31,7 +31,7 @@ class Cell
      * @param  string  $coordinate
      * @return Cell
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public static function make(Worksheet $worksheet, string $coordinate)
     {

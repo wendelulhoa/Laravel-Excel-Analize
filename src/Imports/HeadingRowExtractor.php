@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Imports;
+namespace Analize\Excel\Imports;
 
-use Maatwebsite\Excel\Concerns\WithColumnLimit;
-use Maatwebsite\Excel\Concerns\WithGroupedHeadingRow;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithStartRow;
-use Maatwebsite\Excel\Row;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\Excel\Concerns\WithColumnLimit;
+use Analize\Excel\Concerns\WithGroupedHeadingRow;
+use Analize\Excel\Concerns\WithHeadingRow;
+use Analize\Excel\Concerns\WithStartRow;
+use Analize\Excel\Row;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 class HeadingRowExtractor
 {

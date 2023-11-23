@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace Analize\Excel;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToCollection;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
-use Maatwebsite\Excel\Concerns\WithFormatData;
-use Maatwebsite\Excel\Concerns\WithMappedCells;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToCollection;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithCalculatedFormulas;
+use Analize\Excel\Concerns\WithFormatData;
+use Analize\Excel\Concerns\WithMappedCells;
+use Analize\PhpSpreadsheet\Worksheet\Worksheet;
 
 class MappedReader
 {
@@ -17,7 +17,7 @@ class MappedReader
      * @param  WithMappedCells  $import
      * @param  Worksheet  $worksheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     public function map(WithMappedCells $import, Worksheet $worksheet)
     {

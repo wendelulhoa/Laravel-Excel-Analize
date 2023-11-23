@@ -1,28 +1,28 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
 use DateTime;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Concerns\WithFormatData;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Events\AfterImport;
-use Maatwebsite\Excel\Events\BeforeImport;
-use Maatwebsite\Excel\Events\ImportFailed;
-use Maatwebsite\Excel\Reader;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\TestCase;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\ToArray;
+use Analize\Excel\Concerns\ToModel;
+use Analize\Excel\Concerns\WithBatchInserts;
+use Analize\Excel\Concerns\WithChunkReading;
+use Analize\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\WithFormatData;
+use Analize\Excel\Concerns\WithHeadingRow;
+use Analize\Excel\Concerns\WithMultipleSheets;
+use Analize\Excel\Events\AfterImport;
+use Analize\Excel\Events\BeforeImport;
+use Analize\Excel\Events\ImportFailed;
+use Analize\Excel\Reader;
+use Analize\Excel\Tests\Data\Stubs\Database\Group;
+use Analize\Excel\Tests\Data\Stubs\Database\User;
+use Analize\Excel\Tests\TestCase;
+use Analize\PhpSpreadsheet\Shared\Date;
 use PHPUnit\Framework\Assert;
 use Throwable;
 

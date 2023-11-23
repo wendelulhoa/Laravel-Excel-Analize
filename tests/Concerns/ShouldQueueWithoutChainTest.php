@@ -4,11 +4,11 @@ use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Queue\SyncQueue;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
-use Maatwebsite\Excel\Jobs\AfterImportJob;
-use Maatwebsite\Excel\Jobs\QueueImport;
-use Maatwebsite\Excel\Jobs\ReadChunk;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueueImportWithoutJobChaining;
-use Maatwebsite\Excel\Tests\TestCase;
+use Analize\Excel\Jobs\AfterImportJob;
+use Analize\Excel\Jobs\QueueImport;
+use Analize\Excel\Jobs\ReadChunk;
+use Analize\Excel\Tests\Data\Stubs\QueueImportWithoutJobChaining;
+use Analize\Excel\Tests\TestCase;
 
 class ShouldQueueWithoutChainTest extends TestCase
 {

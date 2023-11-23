@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
-use Maatwebsite\Excel\Files\TemporaryFileFactory;
-use Maatwebsite\Excel\Tests\Helpers\FileHelper;
+use Analize\Excel\Files\TemporaryFileFactory;
+use Analize\Excel\Tests\Helpers\FileHelper;
 
 class TemporaryFileTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace Analize\Excel\Tests;
 
 use Illuminate\Contracts\Queue\Job;
 use Illuminate\Http\Testing\File;
-use Maatwebsite\Excel\ExcelServiceProvider;
+use Analize\Excel\ExcelServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use Analize\PhpSpreadsheet\IOFactory;
 use PHPUnit\Framework\Constraint\StringContains;
 
 class TestCase extends OrchestraTestCase
@@ -14,9 +14,9 @@ class TestCase extends OrchestraTestCase
     /**
      * @param  string  $filePath
      * @param  string  $writerType
-     * @return \PhpOffice\PhpSpreadsheet\Spreadsheet
+     * @return \Analize\PhpSpreadsheet\Spreadsheet
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @throws \Analize\PhpSpreadsheet\Reader\Exception
      */
     public function read(string $filePath, string $writerType)
     {
@@ -49,7 +49,7 @@ class TestCase extends OrchestraTestCase
      * @param  int|null  $sheetIndex
      * @return array
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \Analize\PhpSpreadsheet\Exception
      */
     protected function readAsArray(string $filePath, string $writerType, int $sheetIndex = null)
     {

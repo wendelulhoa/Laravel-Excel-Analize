@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace Analize\Excel\Tests\Data\Stubs;
 
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
-use Maatwebsite\Excel\Concerns\WithEvents;
+use Analize\Excel\Concerns\Exportable;
+use Analize\Excel\Concerns\RegistersEventListeners;
+use Analize\Excel\Concerns\WithEvents;
 
 class ExportWithRegistersEventListeners implements WithEvents
 {

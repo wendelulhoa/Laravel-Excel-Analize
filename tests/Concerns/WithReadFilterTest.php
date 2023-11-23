@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace Analize\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\WithReadFilter;
-use Maatwebsite\Excel\Tests\TestCase;
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use Analize\Excel\Concerns\Importable;
+use Analize\Excel\Concerns\WithReadFilter;
+use Analize\Excel\Tests\TestCase;
+use Analize\PhpSpreadsheet\Reader\IReadFilter;
 use PHPUnit\Framework\Assert;
 
 class WithReadFilterTest extends TestCase
