@@ -33,10 +33,10 @@ class ExcelServiceProvider extends ServiceProvider
             ], 'stubs');
 
             if ($this->app instanceof LumenApplication) {
-                $this->app->configure('excel');
+                $this->app->configure('excelAnalize');
             } else {
                 $this->publishes([
-                    $this->getConfigFile() => config_path('excel.php'),
+                    $this->getConfigFile() => config_path('excelAnalize.php'),
                 ], 'config');
             }
         }
@@ -59,7 +59,7 @@ class ExcelServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(
             $this->getConfigFile(),
-            'excel'
+            'excelAnalize'
         );
 
         $this->app->bind(CacheManager::class, function ($app) {
@@ -76,8 +76,8 @@ class ExcelServiceProvider extends ServiceProvider
 
         $this->app->bind(TemporaryFileFactory::class, function () {
             return new TemporaryFileFactory(
-                config('excel.temporary_files.local_path', config('excel.exports.temp_path', storage_path('framework/laravel-excel'))),
-                config('excel.temporary_files.remote_disk')
+                config('excelAnalize.temporary_files.local_path', config('excelAnalize.exports.temp_path', storage_path('framework/laravel-excel'))),
+                config('excelAnalize.temporary_files.remote_disk')
             );
         });
 
@@ -85,7 +85,7 @@ class ExcelServiceProvider extends ServiceProvider
             return new Filesystem($app->make('filesystem'));
         });
 
-        $this->app->bind('excel', function ($app) {
+        $this->app->bind('excelAnalize', function ($app) {
             return new Excel(
                 $app->make(Writer::class),
                 $app->make(QueuedWriter::class),
@@ -94,9 +94,9 @@ class ExcelServiceProvider extends ServiceProvider
             );
         });
 
-        $this->app->alias('excel', Excel::class);
-        $this->app->alias('excel', Exporter::class);
-        $this->app->alias('excel', Importer::class);
+        $this->app->alias('excelAnalize', Excel::class);
+        $this->app->alias('excelAnalize', Exporter::class);
+        $this->app->alias('excelAnalize', Importer::class);
 
         Collection::mixin(new DownloadCollection);
         Collection::mixin(new StoreCollection);
@@ -112,6 +112,6 @@ class ExcelServiceProvider extends ServiceProvider
      */
     protected function getConfigFile(): string
     {
-        return __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'excel.php';
+        return __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'excelAnalize.php';
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-use Analize\Excel\Excel;
+use Analize\Excel\ExcelAnalize;
 
 return [
     'exports' => [
@@ -162,21 +162,21 @@ return [
     |
     */
     'extension_detector' => [
-        'xlsx'     => Excel::XLSX,
-        'xlsm'     => Excel::XLSX,
-        'xltx'     => Excel::XLSX,
-        'xltm'     => Excel::XLSX,
-        'xls'      => Excel::XLS,
-        'xlt'      => Excel::XLS,
-        'ods'      => Excel::ODS,
-        'ots'      => Excel::ODS,
-        'slk'      => Excel::SLK,
-        'xml'      => Excel::XML,
-        'gnumeric' => Excel::GNUMERIC,
-        'htm'      => Excel::HTML,
-        'html'     => Excel::HTML,
-        'csv'      => Excel::CSV,
-        'tsv'      => Excel::TSV,
+        'xlsx'     => ExcelAnalize::XLSX,
+        'xlsm'     => ExcelAnalize::XLSX,
+        'xltx'     => ExcelAnalize::XLSX,
+        'xltm'     => ExcelAnalize::XLSX,
+        'xls'      => ExcelAnalize::XLS,
+        'xlt'      => ExcelAnalize::XLS,
+        'ods'      => ExcelAnalize::ODS,
+        'ots'      => ExcelAnalize::ODS,
+        'slk'      => ExcelAnalize::SLK,
+        'xml'      => ExcelAnalize::XML,
+        'gnumeric' => ExcelAnalize::GNUMERIC,
+        'htm'      => ExcelAnalize::HTML,
+        'html'     => ExcelAnalize::HTML,
+        'csv'      => ExcelAnalize::CSV,
+        'tsv'      => ExcelAnalize::TSV,
 
         /*
         |--------------------------------------------------------------------------
@@ -184,10 +184,10 @@ return [
         |--------------------------------------------------------------------------
         |
         | Configure here which Pdf driver should be used by default.
-        | Available options: Excel::MPDF | Excel::TCPDF | Excel::DOMPDF
+        | Available options: ExcelAnalize::MPDF | ExcelAnalize::TCPDF | ExcelAnalize::DOMPDF
         |
         */
-        'pdf'      => Excel::DOMPDF,
+        'pdf'      => ExcelAnalize::DOMPDF,
     ],
 
     /*

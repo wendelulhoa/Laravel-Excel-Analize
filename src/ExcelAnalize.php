@@ -9,7 +9,7 @@ use Analize\Excel\Files\Filesystem;
 use Analize\Excel\Files\TemporaryFile;
 use Analize\Excel\Helpers\FileTypeDetector;
 
-class Excel implements Exporter, Importer
+class ExcelAnalize implements Exporter, Importer
 {
     use RegistersCustomConcerns;
 
