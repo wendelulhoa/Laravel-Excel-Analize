@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\BinaryFileResponse;
  * @method static void assertExportedInRaw(string $classname, callable $callback = null)
  * @method static void assertImported(string $filePath, string|callable $disk = null, callable $callback = null)
  */
-class Excel extends Facade
+class ExcelAnalize extends Facade
 {
     /**
      * Replace the bound instance with a fake.
