@@ -86,7 +86,7 @@ class ExcelAnalizeServiceProvider extends ServiceProvider
         });
 
         $this->app->bind('excelAnalize', function ($app) {
-            return new Excel(
+            return new ExcelAnalize(
                 $app->make(Writer::class),
                 $app->make(QueuedWriter::class),
                 $app->make(Reader::class),
