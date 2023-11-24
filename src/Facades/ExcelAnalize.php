@@ -6,7 +6,7 @@ use Illuminate\Foundation\Bus\PendingDispatch;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Facade;
-use Analize\Excel\Excel as BaseExcel;
+use Analize\Excel\ExcelAnalize as BaseExcel;
 use Analize\Excel\Fakes\ExcelFake;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
