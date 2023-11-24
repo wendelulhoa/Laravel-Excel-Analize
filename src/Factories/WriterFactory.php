@@ -31,7 +31,7 @@ class WriterFactory
         $writer = IOFactory::createWriter($spreadsheet, $writerType);
 
         $writer->setUseDiskCaching(
-            config('excel.cache.driver', CacheManager::DRIVER_MEMORY) !== CacheManager::DRIVER_MEMORY
+            config('excelAnalize.cache.driver', CacheManager::DRIVER_MEMORY) !== CacheManager::DRIVER_MEMORY
         );
 
         if (static::includesCharts($export)) {
@@ -43,7 +43,7 @@ class WriterFactory
         }
 
         if ($writer instanceof Csv) {
-            static::applyCsvSettings(config('excel.exports.csv', []));
+            static::applyCsvSettings(config('excelAnalize.exports.csv', []));
 
             if ($export instanceof WithCustomCsvSettings) {
                 static::applyCsvSettings($export->getCsvSettings());
@@ -63,7 +63,7 @@ class WriterFactory
         $writer->setPreCalculateFormulas(
             $export instanceof WithPreCalculateFormulas
                 ? true
-                : config('excel.exports.pre_calculate_formulas', false)
+                : config('excelAnalize.exports.pre_calculate_formulas', false)
         );
 
         return $writer;

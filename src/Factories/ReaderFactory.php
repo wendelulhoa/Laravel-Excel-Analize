@@ -34,15 +34,15 @@ class ReaderFactory
         );
 
         if (method_exists($reader, 'setReadDataOnly')) {
-            $reader->setReadDataOnly(config('excel.imports.read_only', true));
+            $reader->setReadDataOnly(config('excelAnalize.imports.read_only', true));
         }
 
         if (method_exists($reader, 'setReadEmptyCells')) {
-            $reader->setReadEmptyCells(!config('excel.imports.ignore_empty', false));
+            $reader->setReadEmptyCells(!config('excelAnalize.imports.ignore_empty', false));
         }
 
         if ($reader instanceof Csv) {
-            static::applyCsvSettings(config('excel.imports.csv', []));
+            static::applyCsvSettings(config('excelAnalize.imports.csv', []));
 
             if ($import instanceof WithCustomCsvSettings) {
                 static::applyCsvSettings($import->getCsvSettings());

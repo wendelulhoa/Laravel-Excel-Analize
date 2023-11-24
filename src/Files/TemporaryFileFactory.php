@@ -46,7 +46,7 @@ class TemporaryFileFactory
      */
     public function makeLocal(string $fileName = null, string $fileExtension = null): LocalTemporaryFile
     {
-        if (!file_exists($this->temporaryPath) && !mkdir($concurrentDirectory = $this->temporaryPath, config('excel.temporary_files.local_permissions.dir', 0777)) && !is_dir($concurrentDirectory)) {
+        if (!file_exists($this->temporaryPath) && !mkdir($concurrentDirectory = $this->temporaryPath, config('excelAnalize.temporary_files.local_permissions.dir', 0777)) && !is_dir($concurrentDirectory)) {
             throw new \RuntimeException(sprintf('Directory "%s" was not created', $concurrentDirectory));
         }
 
@@ -65,7 +65,7 @@ class TemporaryFileFactory
 
         return new RemoteTemporaryFile(
             $this->temporaryDisk,
-            config('excel.temporary_files.remote_prefix') . $filename,
+            config('excelAnalize.temporary_files.remote_prefix') . $filename,
             $this->makeLocal($filename)
         );
     }

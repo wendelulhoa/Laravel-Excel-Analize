@@ -32,7 +32,7 @@ class CacheManager extends Manager
      */
     public function getDefaultDriver(): string
     {
-        return config('excel.cache.driver', 'memory');
+        return config('excelAnalize.cache.driver', 'memory');
     }
 
     /**
@@ -42,12 +42,12 @@ class CacheManager extends Manager
     {
         if (!InstalledVersions::satisfies(new VersionParser, 'psr/simple-cache', '^3.0')) {
             return new MemoryCacheDeprecated(
-                config('excel.cache.batch.memory_limit', 60000)
+                config('excelAnalize.cache.batch.memory_limit', 60000)
             );
         }
 
         return new MemoryCache(
-            config('excel.cache.batch.memory_limit', 60000)
+            config('excelAnalize.cache.batch.memory_limit', 60000)
         );
     }
 
@@ -60,14 +60,14 @@ class CacheManager extends Manager
             return new BatchCacheDeprecated(
                 $this->createIlluminateDriver(),
                 $this->createMemoryDriver(),
-                config('excel.cache.ttl')
+                config('excelAnalize.cache.ttl')
             );
         }
 
         return new BatchCache(
             $this->createIlluminateDriver(),
             $this->createMemoryDriver(),
-            config('excel.cache.ttl')
+            config('excelAnalize.cache.ttl')
         );
     }
 
@@ -77,7 +77,7 @@ class CacheManager extends Manager
     public function createIlluminateDriver(): CacheInterface
     {
         return Cache::driver(
-            config('excel.cache.illuminate.store')
+            config('excelAnalize.cache.illuminate.store')
         );
     }
 

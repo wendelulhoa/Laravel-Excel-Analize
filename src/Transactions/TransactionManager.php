@@ -12,7 +12,7 @@ class TransactionManager extends Manager
      */
     public function getDefaultDriver()
     {
-        return config('excel.transactions.handler');
+        return config('excelAnalize.transactions.handler');
     }
 
     /**
@@ -29,7 +29,7 @@ class TransactionManager extends Manager
     public function createDbDriver()
     {
         return new DbTransactionHandler(
-            DB::connection(config('excel.transactions.db.connection'))
+            DB::connection(config('excelAnalize.transactions.db.connection'))
         );
     }
 }

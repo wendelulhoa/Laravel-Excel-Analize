@@ -187,8 +187,8 @@ class ReadChunk implements ShouldQueue
         );
 
         $this->reader->setReadFilter($filter);
-        $this->reader->setReadDataOnly(config('excel.imports.read_only', true));
-        $this->reader->setReadEmptyCells(!config('excel.imports.ignore_empty', false));
+        $this->reader->setReadDataOnly(config('excelAnalize.imports.read_only', true));
+        $this->reader->setReadEmptyCells(!config('excelAnalize.imports.ignore_empty', false));
 
         $spreadsheet = $this->reader->load(
             $this->temporaryFile->sync()->getLocalPath()
@@ -244,7 +244,7 @@ class ReadChunk implements ShouldQueue
             Cache::delete('laravel-excel/read-chunk/' . $this->uniqueId);
         }
 
-        if (!$force && !config('excel.temporary_files.force_resync_remote')) {
+        if (!$force && !config('excelAnalize.temporary_files.force_resync_remote')) {
             return true;
         }
 

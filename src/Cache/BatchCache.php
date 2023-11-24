@@ -45,7 +45,7 @@ class BatchCache implements CacheInterface
     public function __wakeup()
     {
         $this->cache = Cache::driver(
-            config('excel.cache.illuminate.store')
+            config('excelAnalize.cache.illuminate.store')
         );
     }
 

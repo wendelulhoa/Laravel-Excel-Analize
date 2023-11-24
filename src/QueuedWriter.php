@@ -44,7 +44,7 @@ class QueuedWriter
     public function __construct(Writer $writer, TemporaryFileFactory $temporaryFileFactory)
     {
         $this->writer               = $writer;
-        $this->chunkSize            = config('excel.exports.chunk_size', 1000);
+        $this->chunkSize            = config('excelAnalize.exports.chunk_size', 1000);
         $this->temporaryFileFactory = $temporaryFileFactory;
     }
 
